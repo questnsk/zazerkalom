@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#0a0a0c">
+    <title>Зазеркалье — Horror квест и Horror кинотеатр</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="hero" id="top">
+        <div class="hero-bg" aria-hidden="true">
+            <div class="orb orb-a"></div>
+            <div class="orb orb-b"></div>
+            <div class="orb orb-c"></div>
+            <div class="orb orb-d"></div>
+            <div class="hero-noise"></div>
+            <div class="hero-vignette"></div>
+        </div>
+
+        <div class="hero-inner">
+
+
+            <nav class="choice-list" aria-label="Выбор раздела">
+                <button class="choice choice-quest" type="button" data-target="quest">
+                    <span class="choice-word">ЗАЗЕРКАЛЬЕ</span>
+                    <span class="choice-label">HORROR КВЕСТ</span>
+                </button>
+
+                <button class="choice choice-cinema" type="button" data-target="cinema">
+                    <span class="choice-word">КИНОТЕАТР</span>
+                    <span class="choice-label">HORROR КИНОТЕАТР</span>
+                </button>
+            </nav>
+
+            <button class="scroll-hint" type="button" aria-label="Прокрутить вниз">
+                <span class="scroll-note">Ознакомиться со всем<br>можно тут :)</span>
+                <span class="scroll-arrow" aria-hidden="true">↓</span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section quest-section" id="quest">
+            <div class="section-photo-stage quest-photo-stage" aria-hidden="true">
+                <div class="section-photo section-photo-1"></div>
+                <div class="section-photo section-photo-2"></div>
+                <div class="section-photo section-photo-3"></div>
+                <div class="section-photo-overlay"></div>
+                <div class="section-photo-noise"></div>
+            </div>
+            <div class="section-heading reveal">
+                <span class="eyebrow">quest</span>
+                <h1>ЗАЗЕРКАЛЬЕ</h1>
+                <h2>ОБРАТНАЯ РЕАЛЬНОСТЬ</h2>
+                <p>Хоррор-квест по мотивам мрачной версии вселенной «Алисы в стране чудес».</p>
+            </div>
+            <section class="quest-gallery-section">
+    <div class="quest-gallery">
+
+        <button
+            class="gallery-arrow gallery-prev"
+            type="button"
+            aria-label="Предыдущая фотография">
+            ‹
+        </button>
+
+        <div class="gallery-track">
+
+            <div class="gallery-slide">
+                <img
+                    src="img/backgrounds/quest-1.png"
+                    alt="Квест «Зазеркалье: обратная реальность»">
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="img/backgrounds/quest-2.png"
+                    alt="Квест «Зазеркалье: обратная реальность»">
+            </div>
+
+            <div class="gallery-slide">
+                <img
+                    src="img/backgrounds/quest-3.png"
+                    alt="Квест «Зазеркалье: обратная реальность»">
+            </div>
+
+        </div>
+
+        <button
+            class="gallery-arrow gallery-next"
+            type="button"
+            aria-label="Следующая фотография">
+            ›
+        </button>
+
+        <div class="gallery-counter">
+            <span class="gallery-current">1</span>
+            <span>/</span>
+            <span class="gallery-total">3</span>
+        </div>
+
+    </div>
+
+</section>
+
+            <div class="glass-grid">
+                <article class="glass-card reveal">
+                    <h2>Описание</h2>
+                    <p>Вы когда-нибудь задумывались, куда исчезают те, кто ищет чудеса?</p>
+                    <p>Когда-то Страна чудес сияла яркими красками. Но все изменилось, когда на трон взошла королева, заменившая краски на кровь, а смех на крики. Ее восставшие слуги Шляпник и Мартовский заяц вынуждены были бежать из-за неудавшегося бунта. Так они оказались за пределами королевства, там, где время гниет, а безумие становится воздухом.</p>
+                    <p>Вы с друзьями отправились на пикник. Сидя у костра, начали вспоминать легенды о расщелине между мирами, где пропадали люди. Но вдруг вы нашли ту самую расщелину, и земля под ногами ожила. Вас затянуло в мир, где трава шепчет проклятия, деревья смотрят глазами, а время течет вспять.</p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h2>Особенности</h2>
+                    <ul class="features-list">
+                        <li>Трансформирующееся помещение за счет механических передвижений стен.</li>
+                        <li>Комнаты оптических иллюзий.</li>
+                        <li>Помещение с эффектом и характерным запахом туманного леса и отдельно стоящего ветхого дома.</li>
+                        <li>Профессиональные актеры с разными характерами и стилями взаимодействия.</li>
+                        <li>У каждого персонажа свой стиль страха: внезапные атаки, тихие появления, психологическое давление или открытые столкновения.</li>
+                        <li>Уровень страха регулируется индивидуально для каждой команды.</li>
+                        <li>Перформанс, созданный по канонам хоррор-жанра, вдохновленный вселенной «Алиса в стране чудес».</li>
+                    </ul>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h2>Режимы</h2>
+                    <div class="info-stack">
+                        <p><strong>12+</strong><br>В сопровождении взрослых или с письменного согласия законного представителя. Разрешены нейтральные действия.</p>
+                        <p><strong>14+</strong><br>Самостоятельное прохождение. Возможны нейтральные действия.</p>
+                        <p><strong>18+</strong><br>Возможен безболезненный сюжетный контакт в рамках сценария.</p>
+                    </div>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h2>Цены</h2>
+                    <div class="info-stack">
+                        <p>Команда от 1 до 3 человек — от 3500 до 5000 ₽.</p>
+                        <p>Доплата за дополнительного игрока — 1000 ₽.</p>
+                        <p>Требуется частичная предоплата на все сеансы.</p>
+                        <p class="warning">Для подтверждения бронирования требуется предоплата 1000 ₽. При отмене позднее чем за день до игры предоплата не возвращается.</p>
+                        <div class="price-extra">
+                            <span class="extra-title">Дополнительно</span>
+                            <p>Фотографии игроков можно сделать на устройства игроков или организатора. Администратор высылает фотографии в течение 3 дней.</p>
+                            <p>Моментальные фото Polaroid с актерами — 250 ₽.</p>
+                            <p>Видео прохождения квеста — 1250 ₽.<br>Отправляется в течении недели с момента покупки.</p>
+                            <p class="warning">Видео после отправления вам хранится 3 дня, за тем автоматически удаляется. Если вы не успели сохранить видеоматериал, до его удаления - денежные средства не возвращаются.</p>
+                            
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <section class="booking reveal">
+                <div class="booking-copy">
+                    <span class="eyebrow"></span>
+                    <h2>Выберите время</h2>
+                    <p>Доступные сеансы и бронирование на квест отображаются ниже.</p>
+                </div>
+                <iframe class="schedule-frame"
+                        src="https://api-mir-kvestov.ru/api/v3/quests/5000?city_id=30"
+                        loading="lazy"
+                        title="Бронирование квеста"></iframe>
+            </section>
+
+            <section class="reviews-widget reveal" aria-label="Отзывы на Мир Квестов">
+                <div class="reviews-widget-inner">
+                    <a href="https://nsk.mir-kvestov.ru/quests/klever-zazerkalie" target="_blank" rel="noopener noreferrer">
+                        <img src="https://nsk.mir-kvestov.ru/widgets/9295/img" alt="Отзывы на квест" title="Отзывы на квест">
+                    </a>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section class="content-section cinema-section" id="cinema">
+            <div class="section-photo-stage cinema-photo-stage" aria-hidden="true">
+                <div class="cinema-photo"></div>
+                <div class="section-photo-overlay cinema-photo-overlay"></div>
+                <div class="section-photo-noise"></div>
+            </div>
+            <div class="section-heading reveal">
+                <span class="eyebrow"></span>
+                <h1>Horror кинотеатр</h1>
+                <p>Это уникальный формат кино с элементами живого перформанса, где фильм выходит за рамки экрана.</p>
+            </div>
+            <section class="cinema-gallery-section">
+
+    <div class="cinema-gallery">
+
+        <button
+            class="cinema-gallery-arrow cinema-gallery-prev"
+            type="button"
+            aria-label="Предыдущая фотография">
+            ‹
+        </button>
+
+        <div class="cinema-gallery-track">
+
+            <div class="cinema-gallery-slide">
+                <img
+                    src="img/backgrounds/cinema-1.png"
+                    alt="Horror Кинотеатр">
+            </div>
+        </div>
+
+        <button
+            class="cinema-gallery-arrow cinema-gallery-next"
+            type="button"
+            aria-label="Следующая фотография">
+            ›
+        </button>
+
+        <div class="cinema-gallery-counter">
+            <span class="cinema-gallery-current">1</span>
+            <span>/</span>
+            <span class="cinema-gallery-total">3</span>
+        </div>
+
+    </div>
+
+</section>
+
+            <div class="cinema-grid">
+                <article class="glass-card reveal">
+                    <h2>О кинотеатре</h2>
+                    <p>Десятки лет назад человек, одержимый фильмами ужасов, проводил тайные кинопоказы на чердаке своего дома. Он считал, что настоящий хоррор должен пугать не только с экрана — страх должен окружать зрителя со всех сторон.</p>
+                    <p>После каждого сеанса гости бесследно исчезали. От них оставались лишь личные вещи и старые фотографии.</p>
+                    <p>Спустя много лет вы получаете приглашение на закрытый показ от неизвестного отправителя.</p>
+                    <p>Вы занимаете свои места. Гаснет свет. Начинается фильм.</p>
+                    <p>Но вместе с первой сценой начинается и другая история — уже вокруг вас.</p>
+                    <p>Актёры, спецэффекты и скрытые механизмы работают синхронно с происходящим на экране. Звуки раздаются совсем рядом, персонажи появляются из темноты, а события фильма неожиданно находят продолжение в самом зале.</p>
+                    <p>Вам не нужно искать выход, разгадывать загадки или выполнять задания.</p>
+                    <p>Вам нужно только смотреть.</p>
+                    <p>Потому что в этом кинотеатре страшно не только то, что происходит на экране.</p>
+                    <p><span class="extra-title">Страшно то, что происходит вокруг него.</span></p>
+
+                </article>
+
+                <article class="glass-card reveal">
+                    <h2>Вас ждет:</h2>
+                    <p>Паранормальные явления, связанные с сюжетом выбранного фильма;</p>
+                    <p>Живой хоррор-перформанс, сопровождающий вас на протяжении всего сеанса;</p>
+                    <p>Персонажи фильма, вышедшие за пределы экрана;</p>
+                    <p>Атмосферное пространство старинного чердака, созданное для полного погружения;</p>
+                    <p>Профессиональное кинооборудование;</p>
+                    <p>Эффект присутствия, стирающий грань между фильмом и реальностью;</p>
+                    <p>Спецэффекты и механизмы синхронизированные с событиями на экране;</p>
+                    <p>Свободный выбор фильма из доступной коллекции;</p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h2>Стоимость</h2>
+                    <p>Команда от 1 до 3 человек — от 3000 до 4000 ₽.</p>
+                    <p>Доплата за дополнительного зрителя — 1000 ₽.</p>             
+                    <p>Требуется частичная предоплата на все сеансы.</p>
+                    <p class="warning">Для подтверждения бронирования требуется предоплата 1000 ₽. При отмене позднее чем за день до игры предоплата не возвращается.</p>
+                </article>
+
+                <article class="glass-card reveal">
+                    <h2>Дополнительные услуги</h2>
+                    <p>Комната отдыха - 1900 ₽. / час</p>
+                    <p>Моментальные фото Polaroid — 250 ₽.</p> 
+                    <p>Фотографии игроков можно сделать на устройства игроков или организатора. Администратор высылает фотографии в течение 3 дней.</p>                  
+                    <p class="warning">Акции:</p>
+                    <p class="warning"> • Зона отдыха сразу после сеанса 1400 ₽. / час</p>
+                    <p class="warning"> • При бронировании на 2 часа стоимость 3500 ₽. <span class="old-price">3800 ₽</span></p>  
+                </article>
+
+            </div>
+            <section class="booking reveal">
+                <div class="booking-copy">
+                    <span class="eyebrow"></span>
+                    <h2>Выберите время</h2>
+                    <p>Доступные сеансы и бронирование на кинотеатр отображаются ниже.</p>
+                </div> 
+                    <iframe 
+                        class="schedule-frame"
+                        src="https://api-mir-kvestov.ru/api/v3/quests/5984?city_id=30"
+                        loading="lazy"
+                        title="Бронирование сеанса кино">
+                    </iframe>
+            </section>
+        </section>
+    </main>
+
+    <a class="telegram-btn" href="https://t.me/kvest_nsk" target="_blank" rel="noopener" aria-label="Telegram">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm5.894 8.221l-1.97 9.28c-.145.658-.537.818-1.084.508l-3-2.21-1.446 1.394a.677.677 0 0 1-.57.129l.204-3.05 5.56-5.022c.24-.213-.054-.334-.373-.121l-6.869 4.326-2.96-.924c-.643-.203-.658-.643.136-.953l11.57-4.458c.538-.196 1.006.128.832.941z"/>
+        </svg>
+    </a>
+
+    <script src="js.js"></script>
+    <section class="contacts-section">
+
+    <div class="contacts-inner">
+
+        <div class="contacts-grid">
+
+            <!-- КОНТАКТЫ -->
+            <div class="contacts-block">
+                <h3>Контакты</h3>
+
+                <p class="contacts-work">
+                    Рабочее время операторов: <strong>9:00–2:00</strong>
+                </p>
+
+                <div class="contact-item">
+                    <span class="contact-label">Horror Кинотеатр</span>
+                    <a href="tel:+79994662664">
+                        +7 (999) 466-26-64
+                    </a>
+                </div>
+
+                <div class="contact-item">
+                    <span class="contact-label">
+                        Квест «Зазеркалье: обратная реальность»
+                    </span>
+                    <a href="tel:+79994667246">
+                        +7 (999) 466-72-46
+                    </a>
+                </div>
+
+                <p class="contact-methods">
+                    Связаться с операторами можно по телефону
+                    и в Telegram.
+                </p>
+            </div>
+
+
+            <!-- АДРЕС -->
+            <div class="contacts-block">
+                <h3>Адрес</h3>
+
+                <p class="address">
+                    ул. Державина, д. 11
+                </p>
+
+                <p>
+                    8 минут пешком от станций метро
+                    «Сибирская» и «Маршала Покрышкина»
+                </p>
+            </div>
+
+
+            <!-- В КВЕСТЕ ЕСТЬ -->
+            <div class="contacts-block">
+                <h3>В квесте есть</h3>
+
+                <ul class="contacts-list">
+                    <li>
+                        <span>Wi-Fi</span>
+                        <strong>есть</strong>
+                    </li>
+
+                    <li>
+                        <span>Парковка</span>
+                        <strong>бесплатная, во дворе</strong>
+                    </li>
+
+                    <li>
+                        <span>Зал ожидания</span>
+                        <strong>гостевая зона до 8 человек</strong>
+                    </li>
+
+                    <li>
+                        <span>Площадь квеста-перформанса</span>
+                        <strong>~150 м²</strong>
+                    </li>
+
+                    <li>
+                        <span>Площадь кинозала / зоны отдыха</span>
+                        <strong>~30 м²</strong>
+                    </li>
+                </ul>
+            </div>
+
+
+            <!-- ОПЛАТА -->
+            <div class="contacts-block">
+                <h3>Оплата</h3>
+
+                <p>
+                    «Зазеркалье: обратная реальность»
+                    и «Horror Кинотеатр» принимают оплату:
+                </p>
+
+                <div class="payment-methods">
+                    <span>Наличные</span>
+                    <span>СБП</span>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="contacts-bottom">
+
+            <p>
+                Услугу оказывает
+                <strong>Высоцкий А.В.</strong>
+            </p>
+
+            <p>
+                ИНН: 421299427761
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+</body>
+</html>
